@@ -13,3 +13,154 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model User {
+  id            String       @id @default(cuid())
+  firstName     String?
+  lastName      String?
+  name          String?
+  email         String       @unique
+  emailVerified Boolean      @default(false)
+  password      String
+  birthDate     DateTime?
+  phone         String?
+  image         String?
+  roleId        Int?
+  role          Role?        @relation(fields: [roleId], references: [id])
+  memberSince   DateTime?
+  preferences   Preferences?
+  isFirstLogin  Boolean      @default(true)
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @default(now()) @updatedAt
+  sessions      Session[]
+  posts         Post[]
+  comments      Comment[]
+  likes         Like[]
+}
+
+model Role {
+  id          Int      @id @default(autoincrement())
+  name        String   @unique
+  permissions String[]
+  users       User[]
+}
+
+model Preferences {
+  id           Int     @id @default(autoincrement())
+  displayEmail Boolean @default(false)
+  displayPhone Boolean @default(false)
+  darkMode     Boolean @default(true)
+  userId       String  @unique
+  user         User    @relation(fields: [userId], references: [id])
+}
+
+model Session {
+  id        String   @id @default(cuid())
+  token     String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  expiresAt DateTime
+}
+
+model Verification {
+  id         String   @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @default(now()) @updatedAt
+}
+
+model Course {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  beginTime   Int
+  endTime     Int
+  day         Day
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([name])
+}
+
+model Slot {
+  id         Int       @id @default(autoincrement())
+  beginTime  Int
+  endTime    Int
+  activityId Int?
+  activity   Activity? @relation(fields: [activityId], references: [id])
+}
+
+model Activity {
+  id           Int          @id @default(autoincrement())
+  name         String
+  slots        Slot[]
+  type         ActivityType
+  martialArt   String
+  instructorId Int
+  origin       String
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@unique([name])
+}
+
+model Stage {
+  id            Int      @id @default(autoincrement())
+  date          DateTime
+  beginTime     Int
+  endTime       Int
+  program       String[]
+  animator      String
+  preRegistered Int[]
+}
+
+model Post {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   Json
+  authorId  String
+  author    User     @relation(fields: [authorId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  likes     Like[]
+}
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  content   Json
+  authorId  String
+  author    User     @relation(fields: [authorId], references: [id])
+  articleId Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Like {
+  id     Int     @id @default(autoincrement())
+  postId Int
+  post   Post    @relation(fields: [postId], references: [id])
+  userId String
+  user   User    @relation(fields: [userId], references: [id])
+  like   Boolean @default(false)
+
+  @@unique([postId, userId])
+}
+
+enum Day {
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
+  SUNDAY
+}
+
+
+enum ActivityType {
+  COURSE
+  STAGE
+}
