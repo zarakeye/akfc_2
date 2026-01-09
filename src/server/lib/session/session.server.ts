@@ -1,10 +1,10 @@
-import 'server-only';
-import { prisma } from '@server/prisma';
-import { cookies } from 'next/headers';
-import jwt from 'jsonwebtoken';
-import { Role, User, Session, Permission } from '@prisma/client';
-import { COOKIE_NAME, SESSION_DURATION_MS } from '../constants';
-import type { UserEnhancedStrict } from '@/types';
+// lib/session/session.server.ts
+import { cookies } from "next/headers";
+import jwt from "jsonwebtoken";
+import { prisma } from "@server/prisma";
+import { COOKIE_NAME, SESSION_DURATION_MS } from "@lib/constants";
+import { UserEnhancedStrict } from "@/types";
+import { Permission, Role, Session, User } from "@prisma/client";
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
@@ -47,20 +47,29 @@ export async function createSessionJWT(user: UserEnhancedStrict): Promise<Create
   };
 }
 
-export async function deleteSession() {
+/**
+ * Deletes the session associated with the given cookie, and then deletes the cookie.
+ * If the cookie is not present, the function does nothing.
+ */
+export async function deleteSessionFromCookie() {
   const cookiestore = await cookies();
-  const cookie = cookiestore.get(COOKIE_NAME);
+  const token = cookiestore.get(COOKIE_NAME)?.value;
 
-  if (!cookie) return null;
+  if (!token) return;
 
   try {
-    const payload = jwt.verify(cookie.value, JWT_SECRET!) as { sessionId: string; };
-    await prisma.session.delete({ where: { id: payload.sessionId } });
+    const payload = jwt.verify(token, JWT_SECRET!) as { sessionId: string; };
+    
+    await prisma.session.delete({
+      where: { id: payload.sessionId }
+    });
   } catch (err) {
     console.error("deleteSession error:", err);
+  } finally {
+    cookiestore.delete(COOKIE_NAME);
   }
-  cookiestore.delete(COOKIE_NAME);
 }
+
 
 export async function getUserFromSessionJWT(): Promise<(User & { role: (Role & { permissions: Permission[]; }) | null }) | null> {
   // Get the cookie
