@@ -1,11 +1,12 @@
-import { JSX } from 'react';
+import { JSX } from "react";
 import PicturesDragNDropForm from '@/features/admin-forms/components/PicturesDragNDropForm';
+ 
 
-export default function Gallery(): JSX.Element {
+export default function AddPicturePage(): JSX.Element {
   return (
-    <main>
-      <h1>Gallery</h1>
+    <div>
+      <h1>Ajouter une photo</h1>
       <PicturesDragNDropForm />
-    </main>
+    </div>
   );
 }
