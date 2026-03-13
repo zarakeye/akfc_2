@@ -1,0 +1,976 @@
+[00:00:01.450] Server  LOG      ✓ Ready in 1057ms
+[00:00:03.867] Server  ERROR    ⨯ Error: ENOENT: no such file or directory, scandir '/Users/stephanebazze/Library/CloudStorage/OneDrive-Bibliothèquespartagées-Onedrive/Documents/Documents_Mac/GitHub/sandbox/akfc_2/apps/web/apps/web/content/docs'
+[00:00:04.495] Browser ERROR   uncaughtError: Error: ENOENT: no such file or directory, scandir '/Users/stephanebazze/Library/CloudStorage/OneDrive-Bibliothèquespartagées-Onedrive/Documents/Documents_Mac/GitHub/sandbox/akfc_2/apps/web/apps/web/content/docs'
+[00:03:09.629] Server  LOG      ✓ Compiled in 223ms
+[00:03:10.507] Browser LOG     Fetching categories...
+[00:03:13.496] Browser LOG     categories: [object Object],[object Object],[object Object]
+[00:23:43.390] Server  ERROR    ⨯ ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:43.506] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:44.033] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:44.033] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:44.158] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:44.226] Server  ERROR    ⨯ ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:44.557] Browser ERROR   uncaughtError: Error: ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:23:44.740] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:44.740] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:48.331] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:48.331] Browser LOG     Fetching categories...
+[00:23:48.331] Browser LOG     categories: [object Object],[object Object],[object Object]
+[00:23:48.331] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:53.508] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:53.508] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/docs" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/web/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="fr">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:23:53.508] Browser LOG     Fetching categories...
+[00:23:53.508] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:23:53.508] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:23:53.508] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:23:53.508] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:23:53.508] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:24:02.746] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:24:02.746] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/docs" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/web/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="fr">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:24:02.746] Browser LOG     Fetching categories...
+[00:24:02.746] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:24:02.746] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:24:02.746] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:24:02.746] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:24:02.746] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:24:30.322] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:24:30.323] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/docs" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/web/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="fr">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:24:30.323] Browser LOG     Fetching categories...
+[00:24:30.323] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:24:30.323] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:25
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const module = (await import(
+     |                         ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = module.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:24:30.323] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:24:30.323] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:24:30.323] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:27:54.170] Server  ERROR    ⨯ ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:27:54.308] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:05.949] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:05.949] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/docs" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/apps/web/...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="fr">
+                          <body
+                            className="geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__var..."
+-                           style={{overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:28:05.949] Browser LOG     Fetching categories...
+[00:28:05.949] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:28:05.949] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:28:05.949] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:28:05.949] Browser ERROR   unhandledRejection: TRPCClientError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[00:28:05.949] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:31.398] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:57.812] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:57.813] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:57.813] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:58.325] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:58.825] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:58.825] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:58.825] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:59.022] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:59.022] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:30:59.217] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:33:46.696] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:00.501] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:01.110] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:01.110] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:13.474] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:27.863] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:27.982] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:28.679] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:34:28.679] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:36:15.991] Server  LOG      ✓ Compiled in 175ms
+[00:36:16.095] Browser ERROR   ./apps/web/src/app/docs/[...slug]/page.tsx:33:30
+Module not found: Can't resolve '@/content/docs/' <dynamic> '.mdx'
+  31 |   const { prev, next } = getPrevNext(pages, slug)
+  32 |
+> 33 |   const importedDoc = (await import(
+     |                              ^^^^^^^
+> 34 |     `@/content/docs/${slug.join("/")}.mdx`
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 35 |   )) as DocModule
+     | ^^^^
+  36 |
+  37 |   const Content = importedDoc.default
+  38 |
+
+Import map: aliased to relative './apps/web/src/content/docs/' <dynamic> '.mdx' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:36:29.828] Server  LOG      ✓ Compiled in 165ms
+[00:38:39.293] Browser WARN    Image with src "http://localhost:3000/mobilePhone.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:39.293] Browser WARN    Image with src "http://localhost:3000/email.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:38:56.756] Browser LOG     Fetching categories...
+[00:38:57.628] Browser LOG     categories: [object Object],[object Object],[object Object]
