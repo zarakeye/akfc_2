@@ -974,3 +974,898 @@ https://nextjs.org/docs/messages/module-not-found
 [00:38:39.293] Browser WARN    Image with src "http://localhost:3000/email.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [00:38:56.756] Browser LOG     Fetching categories...
 [00:38:57.628] Browser LOG     categories: [object Object],[object Object],[object Object]
+[00:56:34.904] Browser LOG     Fetching categories...
+[00:56:36.002] Browser LOG     categories: [object Object],[object Object],[object Object]
+[01:14:55.311] Browser LOG     Fetching categories...
+[01:14:56.438] Browser LOG     categories: [object Object],[object Object],[object Object]
+[01:20:22.459] Server  LOG      ✓ Compiled in 248ms
+[01:20:23.140] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:20:23.295] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:20:23.514] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:20:23.676] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:20:23.977] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:20:24.129] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:20:24.392] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:21:41.974] Server  LOG      ✓ Compiled in 162ms
+[01:21:42.355] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:21:42.561] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:21:42.858] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:25:38.397] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:25:38.586] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:25:38.852] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:25:49.672] Browser LOG     Fetching categories...
+[01:25:50.863] Browser LOG     categories: [object Object],[object Object],[object Object]
+[01:25:54.210] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:25:54.358] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:25:54.572] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:25:54.721] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:25:54.881] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:30:53.235] Server  LOG      ✓ Compiled in 215ms
+[01:30:53.837] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:30:54.045] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:30:54.530] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:20.561] Browser LOG     Fetching categories...
+[01:31:21.786] Browser LOG     categories: [object Object],[object Object],[object Object]
+[01:31:26.461] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:26.614] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:26.835] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:27.015] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:27.170] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:32.526] Browser LOG     Fetching categories...
+[01:31:32.526] Browser LOG     categories: [object Object],[object Object],[object Object]
+[01:31:34.042] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:34.182] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:34.412] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:34.549] Server  ERROR    ⨯ Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:34.711] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/docs/[...slug]/page"
+[01:31:38.443] Browser LOG     Fetching categories...
+[01:31:38.443] Browser LOG     categories: [object Object],[object Object],[object Object]
+[01:38:41.797] Server  LOG      ✓ Compiled in 202ms
+[03:38:25.940] Server  ERROR    ⨯ ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:38:26.089] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:38:26.114] Server  ERROR    ⨯ ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:38:26.138] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:38:26.252] Server  ERROR    ⨯ ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:38:26.254] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:38:26.763] Browser ERROR   uncaughtError: Error: ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:38:26.972] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:38:26.972] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:38:48.273] Server  LOG      ✓ Compiled in 128ms
+[03:38:48.438] Server  ERROR    ⨯ ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:38:48.692] Browser ERROR   uncaughtError: Error: ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:38:48.841] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:38:48.841] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:39:03.903] Server  LOG      ✓ Compiled in 200ms
+[03:39:04.155] Server  ERROR    ⨯ ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:39:04.807] Browser ERROR   uncaughtError: Error: ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:39:04.968] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:39:04.969] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:39:16.973] Server  LOG      ✓ Compiled in 118ms
+[03:39:17.098] Server  ERROR    ⨯ ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:39:17.356] Browser ERROR   uncaughtError: Error: ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+
+[03:39:17.512] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:39:17.512] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:39:44.982] Server  ERROR    ⨯ ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/page.mdx.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/page.mdx.tsx [Server Component]
+
+
+[03:39:45.203] Browser ERROR   uncaughtError: Error: ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/page.mdx.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/page.mdx.tsx [Server Component]
+
+
+[03:39:45.349] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/page.mdx.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/page.mdx.tsx [Server Component]
+[03:39:45.349] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Server Component:
+    ./apps/web/src/lib/docs/docs.source.ts
+    ./apps/web/src/app/docs/[...slug]/page.tsx
+
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/[...slug]/page.tsx [Server Component]
+[03:39:45.349] Browser ERROR   ./apps/web/src/lib/docs/docs.source.ts
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+
+Caused by:
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Debug info:
+- An error occurred while generating the chunk item [project]/apps/web/src/lib/docs/docs.source.ts [app-client] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of *EcmascriptChunkItemContent::new failed
+- Execution of EcmascriptModuleContent::new failed
+- the chunking context (unknown) does not support external modules (request: node:fs)
+
+Import traces:
+  Client Component Browser:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component Browser]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/page.mdx.tsx [Server Component]
+
+  Client Component SSR:
+    ./apps/web/src/lib/docs/docs.source.ts [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Client Component SSR]
+    ./apps/web/src/components/docs/DocsSidebar.tsx [Server Component]
+    ./apps/web/src/components/docs/DocsLayout.tsx [Server Component]
+    ./apps/web/src/app/docs/page.mdx.tsx [Server Component]
+[03:44:15.950] Server  LOG      ✓ Compiled in 260ms
+[03:44:18.392] Browser LOG     Fetching categories...
+[03:44:19.450] Browser LOG     categories: [object Object],[object Object],[object Object]
+[03:44:49.027] Server  LOG      ✓ Compiled in 197ms
+[03:45:28.857] Server  LOG      ✓ Compiled in 197ms
