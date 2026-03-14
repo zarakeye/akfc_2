@@ -1869,3 +1869,37 @@ Import traces:
 [03:44:19.450] Browser LOG     categories: [object Object],[object Object],[object Object]
 [03:44:49.027] Server  LOG      ✓ Compiled in 197ms
 [03:45:28.857] Server  LOG      ✓ Compiled in 197ms
+[03:51:33.223] Server  LOG      ✓ Compiled in 165ms
+[03:54:54.292] Server  LOG      ✓ Compiled in 225ms
+[03:58:36.511] Server  LOG      ✓ Compiled in 240ms
+[04:00:16.051] Server  LOG      ✓ Compiled in 182ms
+[04:03:13.779] Server  LOG      ✓ Compiled in 188ms
+[04:03:46.503] Server  LOG      ✓ Compiled in 175ms
+[15:57:27.741] Server  LOG      ✓ Compiled in 218ms
+[15:58:49.922] Server  LOG      ✓ Compiled in 175ms
+[16:01:19.311] Server  LOG      ✓ Compiled in 339ms
+[16:10:23.907] Server  LOG      ✓ Compiled in 334ms
+[16:11:27.265] Server  LOG      ✓ Compiled in 175ms
+[16:21:37.704] Server  LOG      ✓ Compiled in 321ms
+[16:21:38.392] Browser WARN    Image with src "http://localhost:3000/AKFC_logo.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[16:29:41.807] Server  LOG      ✓ Compiled in 264ms
+[16:30:45.914] Server  LOG      ✓ Compiled in 309ms
+[16:42:30.887] Server  LOG      ✓ Compiled in 344ms
+[16:43:24.942] Server  LOG      ✓ Compiled in 230ms
+[16:46:34.476] Server  LOG      ✓ Compiled in 494ms
+[16:47:10.882] Server  LOG      ✓ Compiled in 165ms
+[16:48:57.763] Server  LOG      ✓ Compiled in 203ms
+[16:49:37.462] Server  LOG      ✓ Compiled in 129ms
+[16:52:53.544] Server  LOG      ✓ Compiled in 177ms
+[16:57:12.595] Server  LOG      ✓ Compiled in 248ms
+[17:03:30.558] Server  LOG      ✓ Compiled in 333ms
+[17:04:31.308] Server  LOG      ✓ Compiled in 209ms
+[17:10:13.923] Server  LOG      ✓ Compiled in 262ms
+[17:16:37.848] Server  LOG      ✓ Compiled in 189ms
+[17:17:59.929] Server  LOG      ✓ Compiled in 229ms
+[17:19:55.041] Server  LOG      ✓ Compiled in 205ms
+[17:22:46.456] Server  LOG      ✓ Compiled in 603ms
+[17:24:13.991] Server  LOG      ✓ Compiled in 271ms
+[17:29:54.788] Server  LOG      ✓ Compiled in 245ms
+[17:32:06.996] Server  LOG      ✓ Compiled in 295ms
+[17:32:35.099] Server  LOG      ✓ Compiled in 146ms
