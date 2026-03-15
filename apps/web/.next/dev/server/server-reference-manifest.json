@@ -1,36 +1,5 @@
 {
-  "node": {
-    "602b9514e7a16dfcec7c243eb2d432ce15e92d4887": {
-      "workers": {
-        "app/page": {
-          "moduleId": "[project]/apps/web/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/src/server-actions/updateUserForm.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "updateUserFormAction",
-          "filename": "apps/web/src/server-actions/updateUserForm.action.ts"
-        }
-      },
-      "layer": {
-        "app/page": "action-browser"
-      },
-      "filename": "apps/web/src/server-actions/updateUserForm.action.ts",
-      "exportedName": "updateUserFormAction"
-    },
-    "7f0639dd3ce492997573d5f33a264d70e7ce91b973": {
-      "workers": {
-        "app/page": {
-          "moduleId": "[project]/apps/web/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/apps/web/src/server-actions/updateUserForm.action.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "initialUpdateUserFormState",
-          "filename": "apps/web/src/server-actions/updateUserForm.action.ts"
-        }
-      },
-      "layer": {
-        "app/page": "action-browser"
-      },
-      "filename": "apps/web/src/server-actions/updateUserForm.action.ts",
-      "exportedName": "initialUpdateUserFormState"
-    }
-  },
+  "node": {},
   "edge": {},
-  "encryptionKey": "/wi2mZudKTrTA1q7arY6jcc5knsJBjrzhjkJKoCkTEQ="
+  "encryptionKey": "zuB2tPKQpdHtVlyargXMEXPv1BL6GTzuieIm28Uhr4k="
 }
