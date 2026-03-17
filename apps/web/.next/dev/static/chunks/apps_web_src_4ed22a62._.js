@@ -18,6 +18,15 @@ function clamp(value, min, max) {
 function getCenterScrollContainer() {
     return document.getElementById("docs-content-scroll");
 }
+function getOffsetTopWithinContainer(element, container) {
+    let top = 0;
+    let current = element;
+    while(current && current !== container){
+        top += current.offsetTop;
+        current = current.offsetParent;
+    }
+    return top;
+}
 function DocsRightAside({ items }) {
     _s();
     const [activeId, setActiveId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
@@ -28,15 +37,29 @@ function DocsRightAside({ items }) {
             if (!container) return;
             const headings = items.map({
                 "DocsRightAside.useEffect.headings": (item)=>document.getElementById(item.id)
-            }["DocsRightAside.useEffect.headings"]).filter(Boolean);
+            }["DocsRightAside.useEffect.headings"]).filter({
+                "DocsRightAside.useEffect.headings": (el)=>!!el
+            }["DocsRightAside.useEffect.headings"]);
+            console.log("TOC ids:", items.map({
+                "DocsRightAside.useEffect": (item)=>item.id
+            }["DocsRightAside.useEffect"]));
+            console.log("Headings found:", items.map({
+                "DocsRightAside.useEffect": (item)=>({
+                        id: item.id,
+                        found: !!document.getElementById(item.id),
+                        tag: document.getElementById(item.id)?.tagName
+                    })
+            }["DocsRightAside.useEffect"]));
+            console.log("Scroll container:", document.getElementById("docs-content-scroll"));
             if (!headings.length) return;
             const updateActiveHeading = {
                 "DocsRightAside.useEffect.updateActiveHeading": ()=>{
-                    const containerTop = container.getBoundingClientRect().top;
+                    const scrollTop = container.scrollTop;
+                    const offsetThreshold = 120;
                     let current = null;
                     for (const heading of headings){
-                        const rect = heading.getBoundingClientRect();
-                        if (rect.top - containerTop <= 120) {
+                        const headingTop = getOffsetTopWithinContainer(heading, container);
+                        if (headingTop - scrollTop <= offsetThreshold) {
                             current = heading.id;
                         }
                     }
@@ -109,6 +132,30 @@ function DocsRightAside({ items }) {
             behavior: "smooth"
         });
     };
+    const scrollToHeading = (id)=>{
+        const container = getCenterScrollContainer();
+        const heading = document.getElementById(id);
+        console.log("scrollToHeading", {
+            id,
+            container: !!container,
+            heading: !!heading,
+            headingId: heading?.id,
+            headingTag: heading?.tagName
+        });
+        if (!container || !heading) return;
+        heading.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest"
+        });
+        // const top = getOffsetTopWithinContainer(heading, container) - 96
+        // container.scrollTo({
+        //   top: Math.max(top, 0),
+        //   behavior: "smooth",
+        // })
+        setActiveId(id);
+        window.history.replaceState(null, "", `#${id}`);
+    };
     if (!items.length) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "grid h-full min-h-0 grid-cols-[auto_minmax(0,1fr)] gap-4 overflow-hidden",
@@ -124,7 +171,7 @@ function DocsRightAside({ items }) {
                         children: "↑"
                     }, void 0, false, {
                         fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                        lineNumber: 114,
+                        lineNumber: 176,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -136,17 +183,17 @@ function DocsRightAside({ items }) {
                                 style: progressStyle
                             }, void 0, false, {
                                 fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                                lineNumber: 125,
+                                lineNumber: 187,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                            lineNumber: 124,
+                            lineNumber: 186,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                        lineNumber: 123,
+                        lineNumber: 185,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -157,13 +204,13 @@ function DocsRightAside({ items }) {
                         children: "↓"
                     }, void 0, false, {
                         fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                        lineNumber: 132,
+                        lineNumber: 194,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                lineNumber: 113,
+                lineNumber: 175,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -176,52 +223,53 @@ function DocsRightAside({ items }) {
                             children: "On this page"
                         }, void 0, false, {
                             fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                            lineNumber: 144,
+                            lineNumber: 206,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                             className: "space-y-2 text-sm",
-                            children: items.map((item)=>{
+                            children: items.map((item, index)=>{
                                 const active = activeId === item.id;
                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                     style: {
                                         marginLeft: `${Math.max(item.depth - 2, 0) * 12}px`
                                     },
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                        href: `#${item.id}`,
-                                        className: `transition-colors ${active ? "font-medium text-primary" : "text-muted-foreground hover:text-foreground"}`,
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "button",
+                                        onClick: ()=>scrollToHeading(item.id),
+                                        className: `text-left transition-colors ${active ? "font-medium text-primary" : "text-muted-foreground hover:text-foreground"}`,
                                         children: item.value
                                     }, void 0, false, {
                                         fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                                        lineNumber: 159,
+                                        lineNumber: 221,
                                         columnNumber: 19
                                     }, this)
-                                }, item.id, false, {
+                                }, `${item.id}-${index}`, false, {
                                     fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 215,
                                     columnNumber: 17
                                 }, this);
                             })
                         }, void 0, false, {
                             fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                            lineNumber: 148,
+                            lineNumber: 210,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                    lineNumber: 143,
+                    lineNumber: 205,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-                lineNumber: 142,
+                lineNumber: 204,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/apps/web/src/components/docs/DocsRightAside.tsx",
-        lineNumber: 112,
+        lineNumber: 174,
         columnNumber: 5
     }, this);
 }

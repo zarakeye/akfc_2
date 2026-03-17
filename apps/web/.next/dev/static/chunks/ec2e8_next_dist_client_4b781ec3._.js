@@ -3195,7 +3195,6 @@ function AppContainer({ children }) {
                                             ("TURBOPACK compile-time value", {
                                                 "protocol": ("TURBOPACK compile-time value", "https"),
                                                 "hostname": ("TURBOPACK compile-time value", "res.cloudinary.com"),
-                                                "port": ("TURBOPACK compile-time value", ""),
                                                 "pathname": ("TURBOPACK compile-time value", "/**")
                                             })
                                         ]),
