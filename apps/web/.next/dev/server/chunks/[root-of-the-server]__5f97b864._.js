@@ -91,6 +91,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$packages$2f$contracts$2f$src
 ;
 ;
 ;
+const JWT_SECRET = process.env.JWT_SECRET;
 const PUBLIC_PATHS = [
     "/",
     "/docs",
@@ -99,7 +100,17 @@ const PUBLIC_PATHS = [
     "/_next",
     "/favicon.ico"
 ];
-function isPublicPath(pathname) {
+/**
+ * Ce proxy agit comme un préfiltre léger :
+ * - il vérifie la présence du cookie d'auth
+ * - il vérifie que le JWT est encore valide
+ *
+ * Il ne vérifie PAS la session en base de données.
+ * La validation canonique de l'authentification reste faite côté backend via :
+ * - getSessionFromRequest
+ * - createTRPCContext
+ * - protectedProcedure
+ */ function isPublicPath(pathname) {
     return PUBLIC_PATHS.some((prefix)=>pathname === prefix || pathname.startsWith(`${prefix}/`));
 }
 async function proxy(req) {
@@ -111,8 +122,11 @@ async function proxy(req) {
     if (!token) {
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL("/", origin));
     }
+    if (!JWT_SECRET) {
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL("/", origin));
+    }
     try {
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$jsonwebtoken$40$9$2e$0$2e$2$2f$node_modules$2f$jsonwebtoken$2f$index$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["default"].verify(token, process.env.JWT_SECRET ?? "");
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$jsonwebtoken$40$9$2e$0$2e$2$2f$node_modules$2f$jsonwebtoken$2f$index$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["default"].verify(token, JWT_SECRET);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].next();
     } catch  {
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$1_$40$babel$2b$core$40$7$2e$28$2e$5_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0_sass$40$1$2e$94$2e$2$2f$node_modules$2f$next$2f$server$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL("/", origin));

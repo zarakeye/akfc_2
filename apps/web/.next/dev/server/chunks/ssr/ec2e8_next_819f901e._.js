@@ -13152,7 +13152,10 @@ const configEnv = ("TURBOPACK compile-time value", {
     ]),
     "localPatterns": ("TURBOPACK compile-time value", [
         ("TURBOPACK compile-time value", {
-            "pathname": ("TURBOPACK compile-time value", "**"),
+            "pathname": ("TURBOPACK compile-time value", "/api/media/by-public-id/**")
+        }),
+        ("TURBOPACK compile-time value", {
+            "pathname": ("TURBOPACK compile-time value", "/_next/static/media/**"),
             "search": ("TURBOPACK compile-time value", "")
         })
     ])
@@ -13511,7 +13514,10 @@ function getImageProps(imgProps) {
             ]),
             "localPatterns": ("TURBOPACK compile-time value", [
                 ("TURBOPACK compile-time value", {
-                    "pathname": ("TURBOPACK compile-time value", "**"),
+                    "pathname": ("TURBOPACK compile-time value", "/api/media/by-public-id/**")
+                }),
+                ("TURBOPACK compile-time value", {
+                    "pathname": ("TURBOPACK compile-time value", "/_next/static/media/**"),
                     "search": ("TURBOPACK compile-time value", "")
                 })
             ])

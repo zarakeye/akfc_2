@@ -1,5 +1,5 @@
 {
-  "/api/trpc/[trpc]/route": "app/api/trpc/[trpc]/route.js",
-  "/docs/[...slug]/page": "app/docs/[...slug]/page.js",
-  "/docs/architecture/project-architecture/page": "app/docs/architecture/project-architecture/page.js"
+  "/admin/dashboard/pictures/page": "app/admin/dashboard/pictures/page.js",
+  "/api/media/by-public-id/[...publicId]/route": "app/api/media/by-public-id/[...publicId]/route.js",
+  "/api/trpc/[trpc]/route": "app/api/trpc/[trpc]/route.js"
 }
