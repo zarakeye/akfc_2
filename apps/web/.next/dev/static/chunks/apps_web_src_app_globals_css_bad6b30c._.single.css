@@ -731,7 +731,7 @@
     z-index: 50;
   }
 
-  .z-\[9999\] {
+  .z-9999, .z-\[9999\] {
     z-index: 9999;
   }
 
@@ -893,6 +893,10 @@
     margin-left: calc(var(--spacing) * 4);
   }
 
+  .ml-auto {
+    margin-left: auto;
+  }
+
   .block {
     display: block;
   }
@@ -932,6 +936,11 @@
   .size-\(--cell-size\) {
     width: var(--cell-size);
     height: var(--cell-size);
+  }
+
+  .size-2 {
+    width: calc(var(--spacing) * 2);
+    height: calc(var(--spacing) * 2);
   }
 
   .size-2\.5 {
@@ -1041,6 +1050,10 @@
     height: 1px;
   }
 
+  .max-h-\(--radix-context-menu-content-available-height\) {
+    max-height: var(--radix-context-menu-content-available-height);
+  }
+
   .max-h-\(--radix-select-content-available-height\) {
     max-height: var(--radix-select-content-available-height);
   }
@@ -1123,6 +1136,10 @@
 
   .w-40 {
     width: calc(var(--spacing) * 40);
+  }
+
+  .w-48 {
+    width: calc(var(--spacing) * 48);
   }
 
   .w-60 {
@@ -1243,6 +1260,10 @@
 
   .border-collapse {
     border-collapse: collapse;
+  }
+
+  .origin-\(--radix-context-menu-content-transform-origin\) {
+    transform-origin: var(--radix-context-menu-content-transform-origin);
   }
 
   .origin-\(--radix-popover-content-transform-origin\) {
@@ -1901,6 +1922,16 @@
     background-color: var(--color-blue-600);
   }
 
+  .bg-blue-600\/80 {
+    background-color: #155dfccc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-blue-600\/80 {
+      background-color: color-mix(in oklab, var(--color-blue-600) 80%, transparent);
+    }
+  }
+
   .bg-border {
     background-color: var(--border);
   }
@@ -1985,6 +2016,16 @@
     background-color: var(--color-green-50);
   }
 
+  .bg-green-600\/80 {
+    background-color: #00a544cc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-green-600\/80 {
+      background-color: color-mix(in oklab, var(--color-green-600) 80%, transparent);
+    }
+  }
+
   .bg-muted {
     background-color: var(--muted);
   }
@@ -2046,6 +2087,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-red-600\/20 {
       background-color: color-mix(in oklab, var(--color-red-600) 20%, transparent);
+    }
+  }
+
+  .bg-red-600\/80 {
+    background-color: #e40014cc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-red-600\/80 {
+      background-color: color-mix(in oklab, var(--color-red-600) 80%, transparent);
     }
   }
 
@@ -2171,6 +2222,10 @@
 
   .bg-zinc-50 {
     background-color: var(--color-zinc-50);
+  }
+
+  .fill-current {
+    fill: currentColor;
   }
 
   .fill-foreground {
@@ -2343,6 +2398,10 @@
 
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
+  }
+
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
   }
 
   .text-center {
@@ -3237,6 +3296,10 @@
     cursor: not-allowed;
   }
 
+  .disabled\:bg-gray-300:disabled {
+    background-color: var(--color-gray-300);
+  }
+
   .disabled\:opacity-50:disabled {
     opacity: .5;
   }
@@ -3304,6 +3367,10 @@
 
   .data-\[error\=true\]\:text-destructive[data-error="true"] {
     color: var(--destructive);
+  }
+
+  .data-\[inset\]\:pl-8[data-inset] {
+    padding-left: calc(var(--spacing) * 8);
   }
 
   .data-\[placeholder\]\:text-muted-foreground[data-placeholder] {
@@ -3459,12 +3526,38 @@
     animation: enter var(--tw-animation-duration, var(--tw-duration, .15s)) var(--tw-ease, ease) var(--tw-animation-delay, 0s) var(--tw-animation-iteration-count, 1) var(--tw-animation-direction, normal) var(--tw-animation-fill-mode, none);
   }
 
+  .data-\[state\=open\]\:bg-accent[data-state="open"] {
+    background-color: var(--accent);
+  }
+
+  .data-\[state\=open\]\:text-accent-foreground[data-state="open"] {
+    color: var(--accent-foreground);
+  }
+
   .data-\[state\=open\]\:fade-in-0[data-state="open"] {
     --tw-enter-opacity: 0;
   }
 
   .data-\[state\=open\]\:zoom-in-95[data-state="open"] {
     --tw-enter-scale: .95;
+  }
+
+  .data-\[variant\=destructive\]\:text-destructive[data-variant="destructive"] {
+    color: var(--destructive);
+  }
+
+  .data-\[variant\=destructive\]\:focus\:bg-destructive\/10[data-variant="destructive"]:focus {
+    background-color: var(--destructive);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .data-\[variant\=destructive\]\:focus\:bg-destructive\/10[data-variant="destructive"]:focus {
+      background-color: color-mix(in oklab, var(--destructive) 10%, transparent);
+    }
+  }
+
+  .data-\[variant\=destructive\]\:focus\:text-destructive[data-variant="destructive"]:focus {
+    color: var(--destructive);
   }
 
   @supports ((-webkit-backdrop-filter: var(--tw)) or (backdrop-filter: var(--tw))) {
@@ -3647,6 +3740,16 @@
     background-color: var(--primary);
   }
 
+  .dark\:data-\[variant\=destructive\]\:focus\:bg-destructive\/20:is(.dark *)[data-variant="destructive"]:focus {
+    background-color: var(--destructive);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .dark\:data-\[variant\=destructive\]\:focus\:bg-destructive\/20:is(.dark *)[data-variant="destructive"]:focus {
+      background-color: color-mix(in oklab, var(--destructive) 20%, transparent);
+    }
+  }
+
   .\[\&_mark\]\:rounded mark {
     border-radius: .25rem;
   }
@@ -3713,6 +3816,10 @@
 
   :is(.\*\:\[span\]\:last\:gap-2 > *):is(span):last-child {
     gap: calc(var(--spacing) * 2);
+  }
+
+  :is(.data-\[variant\=destructive\]\:\*\:\[svg\]\:text-destructive\![data-variant="destructive"] > *):is(svg) {
+    color: var(--destructive) !important;
   }
 
   .\[\&\:last-child\[data-selected\=true\]_button\]\:rounded-r-md:last-child[data-selected="true"] button {

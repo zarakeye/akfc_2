@@ -350,8 +350,7 @@ const useCourseStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_
                 courses
             }),
         /**
-   * Fetches all courses from the server and updates the store.
-   * Resolves with void when complete.
+   * Récupère tous les cours et écrase le cache.
    */ fetchCourses: async ()=>{
             const courses = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$core$2f$trpc$2f$trpcClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["trpcClient"].course.getAll.query();
             set({
@@ -359,15 +358,58 @@ const useCourseStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_
             });
         },
         /**
-   * Fetches a course from the server by its id.
-   * Resolves with the course object if found, or null if not found.
-   * @param id The id of the course to fetch.
-   * @returns A promise that resolves with the course object or null.
+   * Récupère les cours d'une discipline donnée.
+   * Ne touche pas au cache global (renvoyé pour usage UI ponctuel).
+   */ fetchCoursesByDiscipline: async (disciplineId)=>{
+            return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$core$2f$trpc$2f$trpcClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["trpcClient"].course.getAllByDiscipline.query({
+                disciplineId
+            });
+        },
+        /**
+   * Récupère un cours par son id.
+   * Si présent en cache, le retourne directement ; sinon va le chercher.
    */ fetchCourseById: async (id)=>{
-            const course = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$core$2f$trpc$2f$trpcClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["trpcClient"].course.getById.query({
+            const { courses } = get();
+            const cached = courses.find((c)=>c.id === id);
+            if (cached) return cached;
+            try {
+                return await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$core$2f$trpc$2f$trpcClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["trpcClient"].course.getById.query({
+                    id
+                });
+            } catch  {
+                return null;
+            }
+        },
+        /**
+   * Crée un cours en base et l'ajoute au cache.
+   */ createCourse: async (input)=>{
+            const created = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$core$2f$trpc$2f$trpcClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["trpcClient"].course.create.mutate(input);
+            set((state)=>({
+                    courses: [
+                        ...state.courses,
+                        created
+                    ]
+                }));
+            return created;
+        },
+        /**
+   * Met à jour un cours en base et dans le cache.
+   */ updateCourse: async (input)=>{
+            const updated = await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$core$2f$trpc$2f$trpcClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["trpcClient"].course.update.mutate(input);
+            set((state)=>({
+                    courses: state.courses.map((c)=>c.id === updated.id ? updated : c)
+                }));
+            return updated;
+        },
+        /**
+   * Supprime un cours en base et le retire du cache.
+   */ deleteCourse: async (id)=>{
+            await __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$core$2f$trpc$2f$trpcClient$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["trpcClient"].course.delete.mutate({
                 id
             });
-            return course;
+            set((state)=>({
+                    courses: state.courses.filter((c)=>c.id !== id)
+                }));
         }
     }));
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
