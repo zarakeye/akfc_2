@@ -857,10 +857,6 @@
     margin-top: calc(var(--spacing) * 10);
   }
 
-  .mr-3 {
-    margin-right: calc(var(--spacing) * 3);
-  }
-
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
@@ -1100,10 +1096,6 @@
 
   .w-1 {
     width: calc(var(--spacing) * 1);
-  }
-
-  .w-2\.5 {
-    width: calc(var(--spacing) * 2.5);
   }
 
   .w-4 {
@@ -2632,10 +2624,6 @@
 
   .text-green-500 {
     color: var(--color-green-500);
-  }
-
-  .text-green-600 {
-    color: var(--color-green-600);
   }
 
   .text-green-700 {
