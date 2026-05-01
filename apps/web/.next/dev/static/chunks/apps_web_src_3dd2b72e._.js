@@ -23,66 +23,43 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$zu
 var __TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$config$2f$app$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/apps/web/src/config/app.ts [app-client] (ecmascript)");
 ;
 ;
-const useFinderStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$zustand$40$5$2e$0$2e$8_$40$types$2b$react$40$19$2e$2$2e$2_react$40$19$2e$2$2e$0_use$2d$sync$2d$external$2d$store$40$1$2e$6$2e$0_react$40$19$2e$2$2e$0_$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])((set, get)=>({
-        // navigation
-        currentPath: `${__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$config$2f$app$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["APP_ROOT"]}`,
-        setPath: (path)=>set({
-                currentPath: path
-            }),
-        // content
-        folders: [],
-        files: [],
-        setContent: ({ folders, files })=>set({
-                folders,
-                files
-            }),
-        // selection
-        selectionMode: 'single',
-        selected: new Set(),
-        select: (id)=>{
-            const { selectionMode } = get();
-            if (selectionMode === 'single') {
-                set({
-                    selected: new Set([
-                        id
-                    ])
-                });
-            } else {
-                set((state)=>{
-                    const next = new Set(state.selected);
-                    next.add(id);
-                    return {
-                        selected: next
-                    };
-                });
-            }
-        },
-        toggleSelect: (id)=>{
-            set((state)=>{
-                const next = new Set(state.selected);
-                if (next.has(id)) {
-                    next.delete(id);
-                } else {
-                    if (state.selectionMode === 'single') {
-                        return {
-                            selected: new Set([
-                                id
-                            ])
-                        };
+const useFinderStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$zustand$40$5$2e$0$2e$8_$40$types$2b$react$40$19$2e$2$2e$2_react$40$19$2e$2$2e$0_use$2d$sync$2d$external$2d$store$40$1$2e$6$2e$0_react$40$19$2e$2$2e$0_$2f$node_modules$2f$zustand$2f$esm$2f$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["create"])((set)=>({
+        /* -------------------------------- NAV -------------------------------- */ currentPath: `${__TURBOPACK__imported__module__$5b$project$5d2f$apps$2f$web$2f$src$2f$config$2f$app$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["APP_ROOT"]}`,
+        setPath: (path)=>set(()=>({
+                    currentPath: path,
+                    selection: {
+                        selectedIds: new Set()
                     }
-                    next.add(id);
-                }
-                return {
-                    selected: next
-                };
-            });
+                })),
+        /* ------------------------------ CONTENT -------------------------------- */ folders: [],
+        files: [],
+        setContent: ({ folders, files })=>set(()=>({
+                    folders,
+                    files
+                })),
+        /* ----------------------------- SELECTION -------------------------------- */ selection: {
+            selectedIds: new Set()
         },
-        clearSelection: ()=>set({
-                selected: new Set()
+        setSelection: (ids)=>set(()=>({
+                    selection: {
+                        selectedIds: new Set(ids)
+                    }
+                })),
+        toggleSelect: (id)=>set((state)=>{
+                const next = new Set(state.selection.selectedIds);
+                if (next.has(id)) next.delete(id);
+                else next.add(id);
+                return {
+                    selection: {
+                        selectedIds: next
+                    }
+                };
             }),
-        setSelectionMode: (mode)=>set({
-                selectionMode: mode
-            })
+        clearSelection: ()=>set(()=>({
+                    selection: {
+                        selectedIds: new Set()
+                    }
+                }))
     }));
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
